@@ -45,7 +45,7 @@ export class MagicPatternIntegration {
         '<div><div></div><div class="double-bounce2"></div></div>';
 
       const iframe = document.createElement('iframe');
-      iframe.id = "magicpattern-iframe"
+      iframe.id = 'magicpattern-iframe';
       iframe.src = `${this.data.config.url}?toolId=${this.data.config.toolId}`;
 
       wrapper.appendChild(loadingSpinner);
@@ -69,7 +69,6 @@ export class MagicPatternIntegration {
     if (typeof event.data === 'object') {
       switch (event.data.type) {
         case 'magicpattern-loaded':
-
           this.data.iframe?.contentWindow?.postMessage(
             {
               type: 'magicpattern-setup',
