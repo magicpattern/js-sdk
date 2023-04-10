@@ -1,5 +1,5 @@
 {
-  "version": "0.1.8",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,10 +35,11 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@magicpattern/integration",
+  "name": "@magicpattern/js-sdk",
   "description": "Integrate MagicPattern into your web app",
   "author": "Jim Raptis",
   "module": "dist/integration.esm.js",
+  "homepage": "https://github.com/owner/project#readme",
   "size-limit": [
     {
       "path": "dist/integration.cjs.production.min.js",
