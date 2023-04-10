@@ -1,8 +1,8 @@
-<a href="https://brandbird.app/?ref=github"><img src="/assets/header.png"/></a>
+<a href="https://magicpattern.design/?ref=github"><img src="/assets/github-cover.jpg"/></a>
 
 <div align="center">
-  <img src="https://badgen.net/npm/v/@brandbird/integration" alt="Latest release" />
-  <img src="https://badgen.net/bundlephobia/minzip/@brandbird/integration" alt="minzipped size"/>
+  <img src="https://badgen.net/npm/v/@magicpattern/js-sdk" alt="Latest release" />
+  <img src="https://badgen.net/bundlephobia/minzip/@magicpattern/js-sdk" alt="minzipped size"/>
 </div>
 
 <br />
@@ -26,13 +26,13 @@
 #### With NPM
 
 ```sh
-npm i @magicpattern/integration
+npm i @magicpattern/js-sdk
 ```
 
 #### With yarn
 
 ```sh
-yarn add @magicpattern/integration
+yarn add @magicpattern/js-sdk
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ yarn add @magicpattern/integration
 > Be aware that we restrict the integration of MagicPattern by platforms at the moment. Are you interested? Hit me up at jim@magicpattern.design
 
 ```ts
-import { openMagicPattern } from '@magicpattern/integration';
+import { openMagicPattern } from '@magicpattern/js-sdk';
 
 async function() {
   try {
