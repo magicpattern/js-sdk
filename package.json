@@ -42,7 +42,19 @@
   "description": "Integrate MagicPattern into your web app",
   "author": "Jim Raptis",
   "module": "dist/integration.esm.js",
-  "homepage": "https://github.com/owner/project#readme",
+  "homepage": "https://github.com/magicpattern/js-sdk",
+  "keywords": [
+    "magicpattern",
+    "design tool",
+    "pattern",
+    "gradient",
+    "blob"
+  ],
+  "bugs": "https://github.com/magicpattern/js-sdk/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/magicpattern/js-sdk.git"
+  },
   "size-limit": [
     {
       "path": "dist/integration.cjs.production.min.js",

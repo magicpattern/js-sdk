@@ -62,8 +62,29 @@ async function() {
 }
 ```
 
-<!--
+All the available `toolId` values are:
+
+```
+const toolIds = [
+  "confetti-generator",
+  "grid-patterns",
+  "noise-generator",
+  "blob-compositions",
+  "geometric-patterns",
+  "seamless-patterns",
+  "blurry-gradients",
+  "wave-generator",
+  "css-patterns",
+  "chart-generator",
+  "mesh-gradients",
+  "blob-generator",
+  "doodle-backgrounds",
+  "iphone-13-gradients",
+];
+```
+
 ## Demo
 
-1. [Demo for React.js](https://codesandbox.io/s/brandbird-integration-485un)
-2. [Demo for vanilla JS](https://codesandbox.io/s/brandbird-integration-vanilla-js-eyvic) -->
+[Demo for React.js](https://codesandbox.io/s/magicpattern-integration-react-js-demo-d3nkih)
+
+<!-- 2. [Demo for vanilla JS](https://codesandbox.io/s/brandbird-integration-vanilla-js-eyvic) -->
