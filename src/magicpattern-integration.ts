@@ -78,6 +78,7 @@ export class MagicPatternIntegration {
               canSwitchTool: this.data.config.canSwitchTool,
               width: this.data.config.width,
               height: this.data.config.height,
+              src: this.data.config.src,
             },
             '*'
           );

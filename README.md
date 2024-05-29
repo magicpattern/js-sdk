@@ -51,6 +51,7 @@ async function() {
         canChangeTool: false, // Optional: can the user choose a different tool
         width: 1200, // Optional
         height: 900, // Optional
+        src: "IMAGE_URL_TO_EDIT", // Optional: Used only on specific tools like the Fractral Glass generator
       }
     );
 
@@ -68,6 +69,7 @@ All the available `toolId` values are:
 const toolIds = [
   "confetti-generator",
   "grid-patterns",
+  "polka-patterns",
   "noise-generator",
   "blob-compositions",
   "geometric-patterns",
@@ -80,11 +82,22 @@ const toolIds = [
   "blob-generator",
   "doodle-backgrounds",
   "iphone-13-gradients",
+  "fractal-glass",
 ];
 ```
 
 ## Demo
 
-[Demo for React.js](https://codesandbox.io/s/magicpattern-integration-react-js-demo-d3nkih)
+[Demo for React.js](httcdfrps://codesandbox.io/s/magicpattern-integration-react-js-demo-d3nkih)
+
+<!-- ## Testing Locally
+
+1. `npm run build`
+2. `npm link` in the library root directory
+3. Navigate to your project and run `npm link PATH_TO_LOCAL_LIBRARY`
+
+Use `npm prefix -g` to find local path with the linked library.
+https://dev.to/one-beyond/different-approaches-to-testing-your-own-packages-locally-npm-link-4hoj
+-->
 
 <!-- 2. [Demo for vanilla JS](https://codesandbox.io/s/brandbird-integration-vanilla-js-eyvic) -->

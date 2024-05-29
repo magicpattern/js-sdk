@@ -1,5 +1,6 @@
 export interface MagicPatternConfig {
   url?: string;
+  src?: string;
   provider?: string;
   toolId?: string;
   apiKey?: string;
