@@ -5,6 +5,8 @@ export interface MagicPatternConfig {
   toolId?: string;
   apiKey?: string;
   canSwitchTool?: boolean;
+  keepOpenAfterExport?: boolean;
+  kep?: boolean;
   width?: number;
   height?: number;
 }

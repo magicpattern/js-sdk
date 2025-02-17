@@ -5,6 +5,7 @@ const DEFAULT_CONFIG: MagicPatternConfig = {
   provider: 'Your Product Inc.',
   toolId: 'geometric-patterns',
   canSwitchTool: false,
+  keepOpenAfterExport: false,
 };
 
 export class MagicPatternIntegration {
@@ -76,6 +77,7 @@ export class MagicPatternIntegration {
               toolId: this.data.config.toolId,
               apiKey: this.data.config.apiKey,
               canSwitchTool: this.data.config.canSwitchTool,
+              keepOpenAfterExport: this.data.config.keepOpenAfterExport,
               width: this.data.config.width,
               height: this.data.config.height,
               src: this.data.config.src,
@@ -89,7 +91,8 @@ export class MagicPatternIntegration {
         case 'magicpattern-image':
           const { type, ...rest } = event.data;
           this.data.resolve(rest);
-          this.teardown();
+          if (!this.data.config.keepOpenAfterExport)
+            this.teardown();
           break;
         case 'magicpattern-error':
           console.error('MagicPattern reported an error: ', event.data.error);
