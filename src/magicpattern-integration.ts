@@ -91,8 +91,7 @@ export class MagicPatternIntegration {
         case 'magicpattern-image':
           const { type, ...rest } = event.data;
           this.data.resolve(rest);
-          if (!this.data.config.keepOpenAfterExport)
-            this.teardown();
+          if (!this.data.config.keepOpenAfterExport) this.teardown();
           break;
         case 'magicpattern-error':
           console.error('MagicPattern reported an error: ', event.data.error);
